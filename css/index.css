@@ -127,6 +127,12 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.border {
+  border: 1px dotted black;
+}
+.padding {
+  padding: 10px 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -144,35 +150,54 @@ h4,
 h5 {
   font-size: 2rem;
 }
+p {
+  color: #0A0C57;
+}
 .container {
-  max-width: 900px;
+  width: 900px;
   margin: 0 auto;
   font-size: 1.6rem;
   height: 1200px;
-  border: 5px solid tomato;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
 }
 header {
-  border: 5px solid green;
   margin: 10px;
-  background-color: lightgrey;
 }
 header nav {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0;
-  border: 1px solid blue;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: space-around;
+  }
 }
 header nav a {
-  border: 5px solid black;
   font-size: 2rem;
   margin: 20px 1rem;
+  color: #0A0C57;
 }
 .middle-content {
-  border: 5px solid black;
-  width: 100%;
+  width: 90%;
   height: 600px;
   padding: 40px 20px;
-  background-color: lightgrey;
+  margin: 0 5%;
+  background-color: lightblue;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    height: 550px;
+  }
+}
+@media (max-width: 500px) {
+  .middle-content img {
+    width: 100%;
+  }
 }
 .middle-content .middle {
   padding: 20px;
@@ -195,8 +220,60 @@ header nav a {
 .bottom-content .Introduction {
   margin: 20px 1rem;
   width: 50%;
+  padding-right: 10%;
 }
 .bottom-content .Skills {
   margin: 20px 1rem;
   width: 50%;
+}
+.bottom-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0A0C57;
+}
+.bottom-content p.first {
+  border: 1px dotted black;
+  padding: 10px 0;
+}
+.bottom-content p.second {
+  border: 1px dotted black;
+  padding: 10px 0;
+}
+.bottom-content p.third {
+  border: 1px dotted black;
+  padding: 10px 0;
+}
+.work {
+  padding: 0 40px;
+  height: 100px;
+}
+.work h2 {
+  color: #0A0C57;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+footer {
+  width: 90%;
+  margin: 0 auto;
+  height: 90px;
+  background-color: azure;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
+footer div {
+  height: 90px;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  footer div {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
 }
