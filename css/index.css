@@ -1,1 +1,280 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.border {
+  border: 1px dotted black;
+}
+.padding {
+  padding: 10px 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2rem;
+}
+p {
+  color: #0A0C57;
+}
+.container {
+  width: 900px;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  height: 1200px;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
+header {
+  margin: 10px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: space-around;
+  }
+}
+header nav a {
+  font-size: 2rem;
+  margin: 20px 1rem;
+  color: #0A0C57;
+}
+.middle-content {
+  width: 90%;
+  height: 600px;
+  padding: 40px 20px;
+  margin: 0 5%;
+  background-color: lightblue;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    height: 550px;
+  }
+}
+@media (max-width: 500px) {
+  .middle-content img {
+    width: 100%;
+  }
+}
+.middle-content .middle {
+  padding: 20px;
+}
+.middle-content h1 {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+.middle-content h3 {
+  padding: 10px 0% 20px;
+  border-bottom: 1px solid black;
+}
+.bottom-content {
+  width: 100%;
+}
+.bottom-content .experience {
+  display: flex;
+  padding: 40px;
+}
+.bottom-content .Introduction {
+  margin: 20px 1rem;
+  width: 50%;
+  padding-right: 10%;
+}
+.bottom-content .Skills {
+  margin: 20px 1rem;
+  width: 50%;
+}
+.bottom-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0A0C57;
+}
+.bottom-content p.first {
+  border: 1px dotted black;
+  padding: 10px 0;
+}
+.bottom-content p.second {
+  border: 1px dotted black;
+  padding: 10px 0;
+}
+.bottom-content p.third {
+  border: 1px dotted black;
+  padding: 10px 0;
+}
+.work {
+  padding: 0 40px;
+  height: 80px;
+}
+.work h2 {
+  color: #0A0C57;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+footer {
+  width: 90%;
+  margin: 0 auto;
+  height: 90px;
+  background-color: azure;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
+footer div {
+  height: 90px;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  footer div {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
